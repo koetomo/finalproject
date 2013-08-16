@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Major Finder - Major Chose</title>
+<link rel="stylesheet" type="text/css" href="css/quiz_style.css">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/jVal.css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
+<script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
+<script type="text/javascript" src="js/roundabout.js"></script>
+<script type="text/javascript" src="js/roundabout_shapes.js"></script>
+<script type="text/javascript" src="js/gallery_init.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/quiz.js"></script>
+
+<script>
+	function getUrlParam(name){ 
+	var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
+	var url = window.location.search;
+	var r = url.substr(1).match(reg); 
+	if(r!=null)return unescape(r[2]); return null; 
+	}
+</script>
+
+</head>
+<body>
+ <header>
+    <div class="container">
+    	<h1>MCFS</h1>
+      <nav>
+        <ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="quiz.html">Majors</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+   
+        </ul>
+      </nav>
+    </div>
+	</header>
+
+  <div class="main-box">
+    <div class="container">
+      <div class="inside">
+        <div class="wrapper">
+		<div>
+			  <button id="art">Art</button>
+			  <button id="biology">Biology</button>
+			  <button id="chemistry">Chemistry</button>
+			  <button id="compsci">Computer Science</button>
+			  <button id="engineering">Engineering</button>
+			  <button id="english">English</button>
+			  <button id="language">Foreign Language</button>
+			  <button id="history">History</button>
+			  <button id="math">Math</button>
+			  <button id="physics">Physics</button>
+			  <button id="science">Science(General)</button>
+		</div>
+
+		<div id="nowshowing">Now Showing: <div class = "filters" id="button_art">Art</div><div class = "filters" id="button_biology">Biology</div><div class = "filters" id="button_chemistry">Chemistry</div><div class = "filters" id="button_compsci">CompSci</div><div class = "filters" id="button_engineering">Engineering</div><div class = "filters" id="button_english">English</div><div class = "filters" id="button_language">Language</div><div class = "filters" id="button_history">History</div><div class = "filters" id="button_math">Math</div><div class = "filters" id="button_physics">Physics</div><div class = "filters" id="button_science">Science</div></div>
+
+		<div>
+			<ul>
+			    <li class="hide math" id="applied"><a href="quiz.html?pageId=2">Applied Mathematics</a></li>
+			    <li class="hide art history" id="artp"><a href="quiz.html?pageId=4">Art Practice</a></li>
+			    <li class="hide biology physics science engineering" id="bioe"><a href="quiz.html?pageId=5">Bioengineering</a></li>
+			    <li class="hide biology chemistry physics science" id="chemb"><a href="quiz.html?pageId=6">Chemical Biology</a></li>
+			    <li class="hide chemistry physics science engineering" id="cheme"><a href="quiz.html?pageId=7">Chemical Engineering</a></li>
+			    <li class="hide chemistry physics science" id="chem"><a href="quiz.html?pageId=8">Chemistry</a></li>
+			    <li class="hide language" id="chinese"><a href="quiz.html?pageId=9">Chinese Language</a></li>
+			    <li class="hide art english history" id="classics"><a href="quiz.html?pageId=10">Classics</a></li>
+			    <li class="hide math compsci" id="cogsci"><a href="quiz.html?pageId=11">Cognitive Science</a></li>
+			    <li class="hide english" id="complit"><a href="quiz.html?pageId=12">Comparative Literature</a></li>
+			    <li class="hide compsci math" id="comsci"><a href="quiz.html?pageId=3">Computer Science</a></li>
+			    <li class="hide math" id="econ"><a href="quiz.html?pageId=13">Economics</a></li>
+			    <li class="hide compsci math science engineering physics" id="eecs"><a href="quiz.html?pageId=14">Electrical Engineering and Computer Science</a></li>
+			    <li class="hide history art" id="film"><a href="quiz.html?pageId=15">Film Studies</a></li>
+			    <li class="hide history" id="hist"><a href="quiz.html?pageId=16">History</a></li>
+			    <li class="hide history art" id="histart"><a href="quiz.html?pageId=17">History of Art</a></li>
+			    <li class="hide math science engineering physics" id="ie"><a href="quiz.html?pageId=18">Industiral Engineering</a></li>
+			    <li class="hide math science engineering physics" id="meche"><a href="quiz.html?pageId=19">Mechanical engineering</a></li>
+			    <li class="hide art" id="music"><a href="quiz.html?pageId=20">Music</a></li>
+			    <li class="hide english" id="rhet"><a href="quiz.html?pageId=21">Rhetoric</a></li>
+			    <li class="hide math science physics" id="phys"><a href="quiz.html?pageId=22">Physics</a></li>
+			    <li class="hide history english" id="polisci"><a href="quiz.html?pageId=23">Political Science</a></li>
+			    <li class="hide biology science" id="public"><a href="quiz.html?pageId=24">Public Health</a></li>
+			    <li class="hide language" id="spanish"><a href="quiz.html?pageId=25">Spanish</a></li>
+			    <li class="hide math" id="stats"><a href="quiz.html?pageId=26">Statistics</a></li>
+			    <li class="hide art history" id="theater"><a href="quiz.html?pageId=27">Theater, Dance, and Performance Studies</a></li>
+			</ul>
+		</div>
+	</div>
+	<iframe id="Form" style="width:100%; height:500px;"></iframe>
+	<script>
+	var id = getUrlParam("pageId");
+	if(id != null){document.getElementById('Form').src = "major-"+id+".html";}
+	</script>
+</div>
+</div>
+</div>
+
+
+
+
+</body>

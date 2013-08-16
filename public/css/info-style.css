@@ -1,0 +1,42 @@
+.center { text-align: center;}
+
+#major .name {
+	width:300px;
+	text-align:center;
+	margin: 5px 0px 10px 30px;
+	padding:10px;
+	background-color: #607596;
+	border:1px solid gray;
+	font-size:14px;
+    	color:#fff; /*white*/
+}
+
+
+#major table {
+	border-collapse: collapse;
+	width: 550px;
+	font-size:11px;
+	margin:auto;
+	}
+
+#major td {
+	border:1px solid gray;
+ 	padding: 5px;
+ 	vertical-align:top;
+ 	}
+
+#major thead {
+	color:white;
+	background-color: #607596;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#major .subhead {
+	color:black;
+	background-color: #cbd1dd;
+	text-align:center;
+	font-weight:bold;
+	vertical-align:text-bottom;
+}

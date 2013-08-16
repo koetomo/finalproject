@@ -1,0 +1,35 @@
+ul{
+	list-style-type:none;
+}
+.hide{
+	display:none;
+}
+
+.show{
+	display:list-item;
+}
+
+#nowshowing{
+	margin-top:10px;
+	height:30px;
+	line-height:30px;
+}
+
+.filters{
+	display:inline-block;
+	border:1px black solid;
+	margin-right:5px;
+	padding:3px;
+	height:20px;
+	line-height:20px;
+	cursor: pointer;
+}
+
+#removeme{
+	position:fixed;
+	height:20px;
+	padding:3px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	border-radius:2px;
+}
